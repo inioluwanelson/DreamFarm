@@ -1,0 +1,31 @@
+/* style.css */
+
+body {
+  font-family: 'Segoe UI', sans-serif;
+}
+
+.hero {
+  background: url('https://images.unsplash.com/photo-1608334941169-c2b998063571') center center/cover no-repeat;
+  height: 100vh;
+}
+
+.hero h1 {
+  font-weight: 700;
+}
+
+.btn-green {
+  background-color: #28a745;
+  color: #fff;
+}
+
+.btn-green:hover {
+  background-color: #218838;
+}
+
+.card-title {
+  font-weight: bold;
+}
+
+section {
+  scroll-margin-top: 70px;
+}

@@ -1,0 +1,266 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Dream Farm - Our Products</title>
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+    />
+    <link
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+      rel="stylesheet"
+    />
+    <style>
+      body {
+        background-color: #f5f7ff;
+        font-family: "Segoe UI", sans-serif;
+      }
+      .product-card {
+        transition: transform 0.3s ease, box-shadow 0.3s ease;
+      }
+      .product-card:hover {
+        transform: translateY(-10px);
+        box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
+      }
+      .card-title {
+        color: #1a2a80;
+      }
+      .price-range {
+        color: #ff8040;
+        font-weight: bold;
+      }
+      .navbar {
+        background-color: var(--primary);
+      }
+      .navbar a {
+        color: white !important;
+      }
+      /* Animate the navbar on page load */
+      .custom-navbar {
+        background-color: var(
+          --primary
+        ); /* Adjust to match Dream Farm's theme */
+        box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+        animation: slideDown 0.6s ease-in-out;
+        transition: background-color 0.3s ease-in-out;
+        z-index: 999;
+      }
+
+      @keyframes slideDown {
+        from {
+          transform: translateY(-100%);
+          opacity: 0;
+        }
+        to {
+          transform: translateY(0);
+          opacity: 1;
+        }
+      }
+
+      /* Navbar link hover effect */
+      .navbar-nav .nav-link {
+        color: #ffffff;
+        position: relative;
+        transition: color 0.3s ease-in-out;
+      }
+
+      .navbar-nav .nav-link::after {
+        content: "";
+        position: absolute;
+        left: 0;
+        bottom: -4px;
+        width: 0%;
+        height: 2px;
+        background-color: #b2b0e8; /* highlight color */
+        transition: width 0.3s ease;
+      }
+
+      .navbar-nav .nav-link:hover {
+        color: #b2b0e8;
+      }
+
+      .navbar-nav .nav-link:hover::after {
+        width: 100%;
+      }
+
+      /* Active link customization */
+      .navbar-nav .nav-link.active {
+        color: #7a85c1 !important;
+      }
+      .footer {
+        background-color: var(--primary);
+        color: white;
+        padding: 30px 0;
+      }
+
+      .footer a {
+        color: white;
+        margin-right: 15px;
+      }
+      .social-icons a {
+        color: #fff;
+        margin-right: 15px;
+      }
+      body {
+        background-color: #f4f6ff;
+        font-family: "Segoe UI", sans-serif;
+      }
+      .card {
+        box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+        transition: 0.3s ease-in-out;
+      }
+      .card:hover {
+        transform: translateY(-5px);
+      }
+      .card-img-top {
+  height: 250px;
+  object-fit: cover;
+  border-top-left-radius: 0.5rem;
+  border-top-right-radius: 0.5rem;
+}
+
+      .btn-book {
+        background-color: #7a85c1;
+        color: white;
+      }
+      .btn-book:hover {
+        background-color: #b2b0e8;
+        color: whitesmoke;
+      }
+
+      :root {
+        --primary: #1a2a80;
+        --secondary: #7a85c1;
+        --accent: #b2b0e8;
+      }
+    </style>
+  </head>
+  <body>
+    <!-- Navbar -->
+    <nav class="navbar navbar-expand-lg fixed-top custom-navbar">
+      <div class="container">
+        <a class="navbar-brand text-white fw-bold" href="index.html"
+          >Dream Farm</a
+        >
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#navbarNav"
+        >
+          <span class="navbar-toggler-icon bg-light"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+          <ul class="navbar-nav ms-auto">
+            <li class="nav-item">
+              <a class="nav-link" href="index.html">Home</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="features.html">Features</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link active text-warning" href="#">Products</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="About.html">About</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+    <!-- Products Section -->
+    <div class="container py-5">
+      <h2 class="text-center mb-5" style="color: #1a2a80; margin-top: 60px">
+        Our Products
+      </h2>
+      <div class="row g-4 justify-content-center">
+        <!-- Fresh Catfish -->
+        <div class="col-md-4">
+          <div class="card h-100">
+            <img
+              src="images/cat fishm fresh.jpg"
+              class="card-img-top"
+              alt="Fresh Catfish"
+            />
+            <div class="card-body">
+              <h5 class="card-title">Fresh Catfish</h5>
+              <p class="card-text">
+                Table-size and barbecue-size fresh catfish harvested from clean,
+                well-managed ponds.
+              </p>
+              <a
+                href="https://wa.me/2348151450371?text=Hello%2C%20I'm%20interested%20in%20ordering%20Fresh%20Catfish%20from%20Dream%20Farm."
+                class="btn btn-book w-100"
+                >Order Now</a
+              >
+            </div>
+          </div>
+        </div>
+
+        <!-- Smoked Catfish -->
+        <div class="col-md-4">
+          <div class="card h-100">
+            <img
+              src="images/cat fish.jpg"
+              class="card-img-top"
+              alt="Smoked Catfish"
+            />
+            <div class="card-body">
+              <h5 class="card-title">Smoked Catfish</h5>
+              <p class="card-text">
+                Tasty and well-packaged dried catfish. Ideal for home use,
+                restaurants, or catering services.
+              </p>
+              <a
+                href="https://wa.me/2348151450371?text=Hello%2C%20I'm%20interested%20in%20ordering%20Smoked%20Catfish%20from%20Dream%20Farm."
+                class="btn btn-book w-100"
+                >Order Now</a
+              >
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Footer -->
+    <footer class="footer text-center">
+      <div class="container">
+        <p>📍 No 2, St. Lawrence Street, Ovwor, Ughelli South, Delta State.</p>
+        <p>
+          📞 +234 815 145 0371 |
+          <a href="https://wa.me/2348151450371" target="_blank"
+            >WhatsApp Chat</a
+          >
+        </p>
+        <div>
+          <a href="https://facebook.com" target="_blank"
+            ><i class="fab fa-facebook fa-lg"></i
+          ></a>
+          <a href="https://t.me" target="_blank"
+            ><i class="fab fa-telegram fa-lg"></i
+          ></a>
+          <a href="https://instagram.com" target="_blank"
+            ><i class="fab fa-instagram fa-lg"></i
+          ></a>
+        </div>
+        <p class="mt-3">
+          &copy; <span id="currentYear"></span> Dream Farm. All rights reserved.
+        </p>
+      </div>
+    </footer>
+
+    <!-- JS -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.js"></script>
+    <script>
+      AOS.init();
+    </script>
+    <script>
+      // Auto-update the footer year
+      document.getElementById("currentYear").textContent =
+        new Date().getFullYear();
+    </script>
+  </body>
+</html>
