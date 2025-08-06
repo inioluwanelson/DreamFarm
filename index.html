@@ -158,7 +158,24 @@
         background-color: var(--accent);
         color: white;
       }
-
+      .btn-book {
+        background-color: var(--secondary);
+        color: white;
+        transition: background-color 0.3s ease;
+      }
+      .btn-book:hover {
+        background-color: var(--accent);
+      }
+      #product-btn {
+        padding: 1rem 2rem;
+        font-size: 1.2rem;
+        background-color: #7a85c1;
+        border: none;
+        color: white;
+      }
+      #product-btn:hover {
+        background-color: #b2b0e8;
+      }
       .footer {
         background-color: var(--primary);
         color: white;
@@ -175,9 +192,16 @@
     <!-- Navbar -->
     <nav class="navbar navbar-expand-lg fixed-top custom-navbar">
       <div class="container">
-        <a class="navbar-brand text-white fw-bold" href="index.html"
-          >Dream Farm</a
-        >
+        <a class="navbar-brand d-flex align-items-center" href="index.html">
+          <img
+            src="images/logo_4-removebg-preview.png"
+            alt="Dream Farm Logo"
+            width="40"
+            height="40"
+            class="me-2"
+          />
+          <span class="text-white fw-bold">Dream Farm</span>
+        </a>
         <button
           class="navbar-toggler"
           type="button"
@@ -259,6 +283,71 @@
               </p>
             </div>
           </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="py-5 bg-white" id="products">
+      <div class="container">
+        <h2 class="text-center section-title mb-4" data-aos="fade-up">
+          Our Products
+        </h2>
+        <div class="row g-4 justify-content-center">
+          <!-- Fresh Catfish -->
+          <div class="col-md-4" data-aos="fade-up">
+            <div class="card h-100 shadow-sm">
+              <img
+                src="images/cat fishm fresh.jpg"
+                class="card-img-top"
+                alt="Fresh Catfish"
+                style="object-fit: cover; height: 250px"
+              />
+              <div class="card-body">
+                <h5 class="card-title">Fresh Catfish</h5>
+                <p class="card-text">
+                  Table-size and barbecue-size fresh catfish harvested from
+                  clean, well-managed ponds.
+                </p>
+                <a
+                  href="https://wa.me/2348151450371?text=Hello%2C%20I'm%20interested%20in%20ordering%20Fresh%20Catfish%20from%20Dream%20Farm."
+                  class="btn btn-book w-100"
+                  >Order Now</a
+                >
+              </div>
+            </div>
+          </div>
+
+          <!-- Smoked Catfish -->
+          <div class="col-md-4" data-aos="fade-up" data-aos-delay="100">
+            <div class="card h-100 shadow-sm">
+              <img
+                src="images/cat fish.jpg"
+                class="card-img-top"
+                alt="Smoked Catfish"
+                style="object-fit: cover; height: 250px"
+              />
+              <div class="card-body">
+                <h5 class="card-title">Smoked Catfish</h5>
+                <p class="card-text">
+                  Tasty and well-packaged dried catfish. Ideal for home use,
+                  restaurants, or catering services.
+                </p>
+                <a
+                  href="https://wa.me/2348151450371?text=Hello%2C%20I'm%20interested%20in%20ordering%20Smoked%20Catfish%20from%20Dream%20Farm."
+                  class="btn btn-book w-100"
+                  >Order Now</a
+                >
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="text-center mt-4">
+          <a
+            href="Products.html"
+            class="btn btn-outline-primary"
+            id="product-btn"
+            >View All Products</a
+          >
         </div>
       </div>
     </section>

@@ -115,11 +115,11 @@
         transform: translateY(-5px);
       }
       .card-img-top {
-  height: 250px;
-  object-fit: cover;
-  border-top-left-radius: 0.5rem;
-  border-top-right-radius: 0.5rem;
-}
+        height: 250px;
+        object-fit: cover;
+        border-top-left-radius: 0.5rem;
+        border-top-right-radius: 0.5rem;
+      }
 
       .btn-book {
         background-color: #7a85c1;
@@ -141,9 +141,16 @@
     <!-- Navbar -->
     <nav class="navbar navbar-expand-lg fixed-top custom-navbar">
       <div class="container">
-        <a class="navbar-brand text-white fw-bold" href="index.html"
-          >Dream Farm</a
-        >
+        <a class="navbar-brand d-flex align-items-center" href="index.html">
+          <img
+            src="images/logo_4-removebg-preview.png"
+            alt="Dream Farm Logo"
+            width="40"
+            height="40"
+            class="me-2"
+          />
+          <span class="text-white fw-bold">Dream Farm</span>
+        </a>
         <button
           class="navbar-toggler"
           type="button"
@@ -155,13 +162,13 @@
         <div class="collapse navbar-collapse" id="navbarNav">
           <ul class="navbar-nav ms-auto">
             <li class="nav-item">
-              <a class="nav-link" href="index.html">Home</a>
+              <a class="nav-link active text-warning" href="index.html">Home</a>
             </li>
             <li class="nav-item">
               <a class="nav-link" href="features.html">Features</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link active text-warning" href="#">Products</a>
+              <a class="nav-link" href="#">Products</a>
             </li>
             <li class="nav-item">
               <a class="nav-link" href="About.html">About</a>
